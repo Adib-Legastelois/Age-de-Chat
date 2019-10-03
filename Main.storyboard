@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Age_de_chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculez votre age de chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh0-4r-Vg2">
+                                <rect key="frame" x="20" y="30" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jot-Sk-k84"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="q5b-ki-DFM">
+                                <rect key="frame" x="20" y="199" width="280" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="FOd-n7-XPS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" red="0.79942792744805968" green="0.30312108574733754" blue="0.13877771702902039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez votre age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vpt-CT-XDR">
+                                <rect key="frame" x="20" y="99" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="B9B-eV-i42"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="vLg-45-Cr9">
+                                <rect key="frame" x="0.0" y="284" width="320" height="284"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52L-yV-Pra">
+                                <rect key="frame" x="265" y="513" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="M1z-u1-6u2"/>
+                                    <constraint firstAttribute="width" constant="35" id="qxd-JJ-ViM"/>
+                                </constraints>
+                                <state key="normal" image="son"/>
+                                <connections>
+                                    <action selector="soundAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EEI-DN-tC4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVo-9O-EHU">
+                                <rect key="frame" x="85" y="149" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.57817951374247589" green="0.11186985368569981" blue="0.077798617023314656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="USH-GJ-iXV"/>
+                                    <constraint firstAttribute="width" constant="150" id="gjC-fP-eE4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Calculer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qns-EO-PJX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q5b-ki-DFM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Jy-6A-uWO"/>
+                            <constraint firstItem="vpt-CT-XDR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1t7-Ah-Ibt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kh0-4r-Vg2" secondAttribute="trailing" constant="20" id="3x3-Mm-TFH"/>
+                            <constraint firstItem="AVo-9O-EHU" firstAttribute="top" secondItem="vpt-CT-XDR" secondAttribute="bottom" constant="20" id="7Pk-GR-WnI"/>
+                            <constraint firstItem="kh0-4r-Vg2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bf5-SB-q45"/>
+                            <constraint firstItem="vLg-45-Cr9" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Egh-Sx-MnC"/>
+                            <constraint firstItem="vLg-45-Cr9" firstAttribute="top" secondItem="q5b-ki-DFM" secondAttribute="bottom" constant="10" id="GFq-O5-ZOf"/>
+                            <constraint firstItem="vpt-CT-XDR" firstAttribute="top" secondItem="kh0-4r-Vg2" secondAttribute="bottom" constant="29" id="Hfi-LH-cnv"/>
+                            <constraint firstItem="vLg-45-Cr9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bFV-fg-xNI"/>
+                            <constraint firstItem="kh0-4r-Vg2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="dF9-cM-eOe"/>
+                            <constraint firstItem="q5b-ki-DFM" firstAttribute="top" secondItem="AVo-9O-EHU" secondAttribute="bottom" constant="10" id="ezx-YO-24p"/>
+                            <constraint firstItem="AVo-9O-EHU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="haB-pg-t9q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vpt-CT-XDR" secondAttribute="trailing" constant="20" id="ldd-RR-eJS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q5b-ki-DFM" secondAttribute="trailing" constant="20" id="q2b-lN-ASc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="52L-yV-Pra" secondAttribute="trailing" constant="20" id="qGo-0P-KtL"/>
+                            <constraint firstItem="vLg-45-Cr9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="quN-ah-CSS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="52L-yV-Pra" secondAttribute="bottom" constant="20" id="xmr-Iu-mSa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="vpt-CT-XDR" id="IxG-rs-HFw"/>
+                        <outlet property="resultLabel" destination="q5b-ki-DFM" id="Ud6-PZ-aqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="134.1549295774648"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat" width="6000" height="4000"/>
+        <image name="son" width="64" height="64"/>
+    </resources>
+</document>
